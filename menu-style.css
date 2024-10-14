@@ -1,0 +1,59 @@
+#menu-hamburguer {
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+
+#menu-lateral {
+    display: none;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    background-color: var(--azul);
+    color: white;
+
+    padding: 15px;
+    font-size: 1.2rem;
+
+    z-index: 2;
+}
+
+#menu-lateral li {
+    margin: 10px;
+}
+
+#menu-lateral h1 {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* ----- Estilo Mobile ----- */
+@media screen and (max-width: 1000px) {
+     /* Estilo Header */
+     #nav1, #nav2 {
+        display: none;
+    }
+
+    #right button {
+        margin-left: 0;
+        margin-right: 2vw;
+    }
+
+    #left img {
+        margin-right: 0;
+    }
+
+    #menu-hamburguer {
+        display: block;
+        align-self: center;
+    }
+
+    #menu-hamburguer {
+        display: block;
+        align-self: center;
+    }
+}

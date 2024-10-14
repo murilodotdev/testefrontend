@@ -65,13 +65,6 @@ header button {
     padding: 5px 15px;
 }
 
-#menu-hamburguer {
-    font-size: 2rem;
-    cursor: pointer;
-    color: white;
-    display: none; /* Escondido em telas maiores */
-}
-
 /* ----- Estilo da Main ----- */
 main {
     margin: 5vh 0;
@@ -152,16 +145,6 @@ footer img {
 
 /* ----- Estilo Tablet ----- */
 @media screen and (max-width: 1000px) {
-    /* Estilo Header */
-    #nav1, #nav2, #right button {
-        display: none;
-    }
-
-    #menu-hamburguer {
-        display: block;
-        align-self: center;
-    }
-
     /* Estilo Main */
     main ol {
         grid-template-columns: repeat(2, 1fr);

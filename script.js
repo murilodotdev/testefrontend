@@ -1,8 +1,21 @@
+const menuHamburguer = document.getElementById("menu-hamburguer")
+const menuLateral    = document.getElementById("menu-lateral")
+
+menuHamburguer.addEventListener('click', (e)=>{
+    menuLateral.style.display = "block"
+})
+
+const fecharMenuLateral = document.getElementById("botao-fechar-ml")
+
+fecharMenuLateral.addEventListener('click', (e)=>{
+    menuLateral.style.display = "none"
+})
+
 // define um nome aleatório para cada corretor
 const Corretor = document.getElementsByClassName("nome-corretor")
 
 const nomes      = ['Ana', 'Maria', 'Laura', 'Júlia', 'João', 'Marcos', 'Caio']
-const sobrenomes = ['Silva', 'Santos', 'Souza', 'Costa', 'de Sá']
+const sobrenomes = ['Silva', 'Santos', 'Souza', 'Costa', 'de Sá', 'Rocha']
 
 for (let i = 0; i < Corretor.length; i++) {
     const element = Corretor[i];
