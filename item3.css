@@ -1,0 +1,77 @@
+:root {
+    --azul: #1b2653;
+    --laranja: #fe6613;
+    --cinza: #787878;
+}
+
+#regra-de-3 h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--azul);
+    margin-bottom: 15px;
+    grid-row: 1;
+}
+
+#conteiner {
+    margin: 5%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+#superior {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+#inferior {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+#se {
+    border-color: var(--laranja);
+}
+
+#se-conteiner {
+    position: relative;
+}
+
+#se-label {
+    position: absolute;
+    font-size: 0.8rem;
+    text-align: center;
+    top: 11px;
+    left: 16px;
+    color: var(--cinza);
+}
+
+.campo-num {
+    width: 100px;
+    padding: 8px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#regra-de-3 button {
+    position: relative;
+    bottom: 0px;
+    padding: 5px 10px;
+    background-color: var(--laranja);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+#regra-de-3 button:hover {
+    background-color: #d35400; 
+}

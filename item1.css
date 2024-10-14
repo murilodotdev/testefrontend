@@ -1,0 +1,63 @@
+:root {
+    --azul: #1b2653;
+    --laranja: #fe6613;
+    --cinza: #787878;
+}
+
+#corretores {
+    display: flex;
+    flex-direction: column;
+}
+
+.corretor {
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+
+.img-frame {
+    position: relative;
+    
+    align-self: center;
+    text-align: center;
+    
+    margin: 5%;
+    height: 80%;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    
+    aspect-ratio: 1 / 1;
+}
+
+.fundo {
+    position: absolute;
+
+    left: 0;
+
+    width: 100%;
+    z-index: -1;
+    filter: blur(4px);
+}
+
+.foto {
+    align-self: center;
+    height: 100%;
+}
+
+.detalhes-corretor {
+    margin: auto 0;
+    justify-content: left;
+}
+
+.nome-corretor {
+    font-weight: 700;
+}
+
+.telefone-corretor {
+    color: var(--laranja);
+    text-decoration: underline;
+}

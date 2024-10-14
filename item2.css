@@ -1,0 +1,70 @@
+:root {
+    --azul: #1b2653;
+    --laranja: #fe6613;
+    --cinza: #787878;
+}
+
+ #mande-mensagem {
+    display: flex;
+    flex-direction: column;
+}
+
+#mande-mensagem form {
+    margin: 5%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+#mande-mensagem h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--azul);
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="tel"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid var(--cinza);
+    border-radius: 4px;
+}
+
+.mascara {
+    position: absolute;
+    top: 11px;
+    right: 15px;
+    pointer-events: none;
+    color: var(--cinza);
+}
+
+#campo-assunto {
+    resize: none;
+    width: 90%;
+    padding: 10px;
+
+    font-family: Roboto;
+    font-size: 1rem;
+}
+
+#mande-mensagem button {
+    background-color: var(--laranja);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+#mande-mensagem button:hover {
+    background-color: #d35400;
+}

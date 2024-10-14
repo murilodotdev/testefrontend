@@ -1,0 +1,192 @@
+/* ----- Estilo Computador ----- */
+:root {
+    --azul: #1b2653;
+    --laranja: #fe6613;
+    --cinza: #787878;
+}
+
+html {
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+/* ----- Estilo da Header ---- */
+header {
+    background-color: var(--azul);
+    color: white;
+    display: grid;
+
+    padding: 10px 2vw;
+}
+
+header nav {
+    margin: auto 0;
+}
+
+#left {
+    display: flex;
+    
+    justify-self: left;
+}
+
+#left img {
+    margin-right: 35px;
+}
+
+#nav1 {
+    justify-content: left;
+}
+
+#right {
+    grid-column: 2;
+    display: flex;
+
+    justify-self: right;
+}
+
+#nav2 {
+    justify-content: right;
+}
+
+header button {
+    grid-column: 2;
+
+    margin: auto;
+    margin-left: 35px;
+
+    background-color: var(--azul);
+    color: white;
+
+    border-color: white;
+    border-style: solid;
+    border-radius: 15px;
+
+    height: fit-content;
+    padding: 5px 15px;
+}
+
+#menu-hamburguer {
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    display: none; /* Escondido em telas maiores */
+}
+
+/* ----- Estilo da Main ----- */
+main {
+    margin: 5vh 0;
+}
+
+main ol {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    row-gap: 5vh;
+
+    list-style: decimal;
+    list-style-position: outside;
+}
+
+main button {
+    background-color: var(--laranja);
+    color: white;
+}
+
+.grid-item {
+    border-color: #787878;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+
+    width: 30vw;
+    min-width: 320px;
+    max-width: 350px;
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ----- Estilo da Footer ---- */
+footer {
+    display: grid;
+
+    background-color: var(--azul);
+    color: white;
+
+    padding: 10px 50px;
+
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer nav {
+    justify-self: left;
+    grid-column: 1;
+
+    margin: auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10%;
+}
+
+footer p {
+    grid-column: 2;
+
+    margin: auto 0;
+}
+
+footer img {
+    justify-self: right;
+    grid-column: 3;
+
+    margin: auto 0;
+}
+
+/* ----- Estilo Tablet ----- */
+@media screen and (max-width: 1000px) {
+    /* Estilo Header */
+    #nav1, #nav2, #right button {
+        display: none;
+    }
+
+    #menu-hamburguer {
+        display: block;
+        align-self: center;
+    }
+
+    /* Estilo Main */
+    main ol {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .grid-item {
+        width: 40vw;
+    }
+
+    footer nav {
+        display: none;
+    }
+
+    footer p {
+        grid-column: 1;
+    }
+}
+
+/* ----- Estilo Celular ----- */
+@media screen and (max-width: 680px) {
+    main ol {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-item {
+        width: 70vw;
+    }
+}
